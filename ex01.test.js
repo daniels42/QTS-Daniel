@@ -1,3 +1,4 @@
+// Daniel Henrique Santos do Carmo (3º DA, 2022)
 import{
     assertEquals,
     assertStringIncludes,
@@ -24,7 +25,6 @@ Deno.test("Teste 2 - Passou!", () => {
 })
 
 Deno.test("Teste 3 - Passou!", () => {
-
   assertObjectMatch ( 
     {  Biliboteca:  true ,  Biblioteca:  false  } , 
     { 
@@ -33,8 +33,6 @@ Deno.test("Teste 3 - Passou!", () => {
   ) ;
 
 })
-
-
 
 Deno.test("Teste 4 - Falha!", () => {
     assertStringIncludes(testestring, "Hello world!");    
