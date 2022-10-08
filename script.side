@@ -1,0 +1,110 @@
+{
+  "id": "d2f9c6cf-2530-43cb-9b24-035d6ca5b95f",
+  "version": "2.0",
+  "name": "Automação Simples",
+  "url": "https://www.google.com.br",
+  "tests": [{
+    "id": "7a40ddd4-d314-4602-a7cf-08a8d25b6f5f",
+    "name": "Untitled",
+    "commands": [{
+      "id": "c139f960-a823-4132-81de-0eca455427e1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55a84162-4c2e-48f0-9fb6-f9bbc7ae4d0a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "736x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "873db615-55de-49ca-ae1f-2b7b69b1ec96",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "a39ed13d-8983-442f-a355-9fcd63033afe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rr4y5c",
+      "targets": [
+        ["css=.rr4y5c", "css:finder"],
+        ["xpath=//div[@id='yDmH0d']/c-wiz/div/div/c-wiz/div/div/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Não')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "533a8746-a159-47b9-94d9-11171749d54d",
+    "name": "Teste",
+    "commands": [{
+      "id": "1c9fe4b6-a085-4728-88db-78d7cbd16030",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b58b9256-e161-4068-826f-610edee32f72",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "736x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3cb38772-ee6b-41d0-a4c4-6ec96c07432a",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Selenium IDE"
+    }, {
+      "id": "9e6abbc3-ef04-4970-be19-511684f77f50",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "682faeb5-d7b4-49b0-8905-e63b55113693",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MjjYud:nth-child(1) > div:nth-child(1) > .g:nth-child(1) .LC20lb:nth-child(2)",
+      "targets": [
+        ["css=.MjjYud:nth-child(1) > div:nth-child(1) > .g:nth-child(1) .LC20lb:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Selenium IDE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8e82462a-5aa6-4395-b1e3-ef51eb8779b8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7a40ddd4-d314-4602-a7cf-08a8d25b6f5f"]
+  }],
+  "urls": ["https://www.google.com.br/"],
+  "plugins": []
+}
